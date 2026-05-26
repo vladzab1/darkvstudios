@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkVstudios | Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <img src="Images/unnamed.png" alt="MainImg" class="mainImg">
+    <h1 class="name">DarkVstudios</h1>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="devlog.html">Devlog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+
+    <article class="wrapper">
+        <h2>Contact form</h2>
+        <h4>Please fill your information and we'll be sending your order</h4>
+
+        <form>
+            <div class="row">
+                <span>Your name</span>
+                <div class="name-inputs">
+                    <input type="text" name="first name" placeholder="first name" id="first_name">
+                    <input type="text" name="last name" placeholder="last name" id="last_name">
+                </div>
+            </div>
+
+            <div class="row">Your email <input type="email" name="email" placeholder="your_mail@mail.com" id="email"></div>
+
+            <div class="row">Password * <input type="password" name="password" placeholder="••••••••" id="password"></div>
+
+            <div class="row">Phone * <input type="tel" name="tel" placeholder="000" id="tel"></div>
+
+            <div class="row">
+                <span>Account type *</span>
+                <div style="display: flex; gap: 15px; color: white;">
+                    <label><input type="radio" name="type" value="dev"> Dev</label>
+                    <label><input type="radio" name="type" value="gamer" checked> Gamer</label>
+                </div>
+            </div>
+
+            <div class="row">Message subject *
+                <select>
+                    <option>Other</option>
+                    <option>An idea to improve the game</option>
+                    <option>Bug fix</option>
+                </select>
+            </div>
+
+            <div class="row">Message *
+                <textarea name="message" id="message"></textarea>
+            </div>
+
+            <div class="row">
+                <span>Terms *</span>
+                <label style="color: white; cursor: pointer;">
+                    <input type="checkbox" name="agree" required> I agree to terms
+                </label>
+            </div>
+
+            <div class="row submit">
+                <input type="submit" name="submit" id="submit" value="SUBMIT FORM">
+            </div>
+        </form>
+    </article>
+
+
+      <footer>
+        <div class="phone">+38(095)553 69 60</div>
+        <div class="footerText">made by DarkVstudios</div>
+        <div class="gmail">darkvstudios@gmail.com</div>
+    </footer>
+<aside></aside>
+</body>

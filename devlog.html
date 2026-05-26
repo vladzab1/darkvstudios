@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkVstudios | Devlog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <img src="Images/unnamed.png" alt="MainImg" class="mainImg">
+    <h1 class="name">DarkVstudios</h1>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="devlog.html">Devlog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+<main>
+    <h2 class="Title">DarkV Studios — Devlog</h2>
+    <div class="game-description">
+        The real development history of our projects: technical challenges, unique features, failures, and solutions discovered during the coding process.
+    </div>
+
+    <div class="wrapper devlog-card">
+        <table class="main-project-layout">
+            <tr>
+                <td class="project-image-column">
+                    <img src="Images/Screenshot_2026_05_06_19_40_27_82_635379c806ce307a93bdada69929690c.jpg" alt="Streamer Summer">
+                </td>
+                <td class="project-details-column">
+                    <h2>Streamer Summer — Streamer Simulator</h2>
+                    <p class="project-intro">A pixel-art life simulator where the player goes from using a cheap webcam to reaching top viral rankings within 90 days.</p>
+                    <table class="project-table">
+                        <tr>
+                            <td class="table-label">Challenge:</td>
+                            <td>The hardest task was writing a massive number of unique chat questions that would not repeat, as well as balancing the internal economy so the player could not complete the entire game in one evening.</td>
+                        </tr>
+                        <tr>
+                            <td class="table-label">Solution:</td>
+                            <td>Created a dedicated line database for chat messages and implemented flexible income coefficients based on the current mood of the viewers.</td>
+                        </tr>
+                        <tr>
+                            <td class="table-label">Feature:</td>
+                            <td>A dynamic interactive chat system. By the way, the game is currently in its final stage and is undergoing Google's review process right now!</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="wrapper devlog-card">
+        <table class="main-project-layout">
+            <tr>
+                <td class="project-image-column">
+                    <img src="Images/EaIj9M.jpg" alt="Spend Your Summer">
+                </td>
+                <td class="project-details-column">
+                    <h2>Spend your summer — Idleness Simulator</h2>
+                    <p class="project-intro">An addictive 2D idle clicker where the main goal is to procrastinate as effectively as possible. However, behind the simple graphics hid serious problems with level balancing.</p>
+                    <table class="project-table">
+                        <tr>
+                            <td class="table-label">Challenge:</td>
+                            <td>It was incredibly difficult to connect and configure items of different levels during upgrades (for example, when all items are level 2, but the player buys a level 3 table). Integrating Google Ads was also a major pain point.</td>
+                        </tr>
+                        <tr>
+                            <td class="table-label">Solution:</td>
+                            <td>Rewrote the UI update logic and manually balanced every upgrade level. As for the advertisements, it required digging through a mountain of documentation until the Google Ads plugin finally worked stably.</td>
+                        </tr>
+                        <tr>
+                            <td class="table-label">Feature:</td>
+                            <td>The day-draining mechanic. The game has a strict time limit of 90 days. The player must "waste" this time as quickly as possible by purchasing upgrades that accelerate the passing days.</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="wrapper devlog-card">
+        <table class="main-project-layout">
+            <tr>
+                <td class="project-image-column">
+                    <img src="Images/photo_5233431360171613437_x.jpg" alt="TexnoMarket Sim">
+                </td>
+                <td class="project-details-column">
+                    <h2>TexnoMarket sim — 3D Store Simulator</h2>
+                    <p class="project-intro">A large-scale management simulator that became a serious technical and creative challenge for the studio.</p>
+                    <table class="project-table">
+                        <tr>
+                            <td class="table-label">Challenge:</td>
+                            <td>It was very difficult to optimize the game so it could run on low-end PCs, because rendering over 50 products hit the FPS severely. Another pain point was the customer queue, which broke constantly.</td>
+                        </tr>
+                        <tr>
+                            <td class="table-label">Solution:</td>
+                            <td>To fix the queue, many custom methods were tested, but eventually, a stable third-party solution from the Asset Store was integrated, resolving the AI collision problems.</td>
+                        </tr>
+                        <tr>
+                            <td class="table-label">Feature:</td>
+                            <td>This project was more of an experiment, because I used only artificial intelligence to make this game, which was quite difficult but interesting!</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="wrapper devlog-card">
+        <table class="main-project-layout">
+            <tr>
+                <td class="project-image-column">
+                    <img src="Images/CiVz17.jpg" alt="Mirror Room">
+                </td>
+                <td class="project-details-column">
+                    <h2>Mirror Room — 3D Puzzle on Unity 6</h2>
+                    <p class="project-intro">An elegant game about finding differences in mirrored worlds, which forced a complete rethink of how cameras work in a 3D space.</p>
+                    <table class="project-table">
+                        <tr>
+                            <td class="table-label">Challenge:</td>
+                            <td>It was difficult to ensure that adjacent rooms in both worlds did not intersect or block one another. After all, the player isn't actually walking across the map — the map is moving under the player!</td>
+                        </tr>
+                        <tr>
+                            <td class="table-label">Solution:</td>
+                            <td>The issue was solved using a Render Texture system. The player does not click on the 3D objects directly, but on a special plane that projects a live view from an isolated camera.</td>
+                        </tr>
+                        <tr>
+                            <td class="table-label">Feature:</td>
+                            <td>A clean and unique "mint-jelly" UI style, fully implemented using the latest Unity 6 engine features.</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="wrapper devlog-card">
+        <table class="main-project-layout">
+            <tr>
+                <td class="project-image-column">
+                    <img src="Images/KBsZLx.png" alt="Coffee Rush Tycoon">
+                </td>
+                <td class="project-details-column">
+                    <h2>Coffee Rush Tycoon — Low-poly Tycoon</h2>
+                    <p class="project-intro">My first project developed completely on my own. While many beginner mistakes were made, they provided priceless experience.</p>
+                    <table class="project-table">
+                        <tr>
+                            <td class="table-label">Challenge:</td>
+                            <td>The order system would break if the receipt contained only 1 or 2 items (it only functioned properly with exactly 3 items). Also, ingredient spawning inside the refrigerator had a mind of its own.</td>
+                        </tr>
+                        <tr>
+                            <td class="table-label">Solution:</td>
+                            <td>Adjusted the exact coordinates of the spawn points, and solved the order problem by blocking all other combinations and restricting orders strictly to 3 items.</td>
+                        </tr>
+                        <tr>
+                            <td class="table-label">Feature:</td>
+                            <td>A completely independent architecture for the coffee-making logic and a deep upgrade system for professional espresso machines.</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="wrapper devlog-card">
+        <table class="main-project-layout">
+            <tr>
+                <td class="project-image-column">
+                    <img src="Images/photo_5235683159985298522_y.jpg" alt="Develop Simulator">
+                </td>
+                <td class="project-details-column">
+                    <h2>Develop Simulator — Text Management</h2>
+                    <p class="project-intro">An indie studio management simulator where the player's main goal is to avoid bankruptcy and handle team stress levels.</p>
+                    <table class="project-table">
+                        <tr>
+                            <td class="table-label">Challenge:</td>
+                            <td>Adjusting the mathematical balance of income and expenses was an extremely complicated task. Another difficulty was adapting the interface for various screen form-factors, since Unity does not handle this automatically.</td>
+                        </tr>
+                        <tr>
+                            <td class="table-label">Solution:</td>
+                            <td>Put a lot of effort into refining the mathematical formulas to ensure the game felt fair and fun. Screens were adapted by configuring custom Canvas Anchors in Unity.</td>
+                        </tr>
+                        <tr>
+                            <td class="table-label">Feature:</td>
+                            <td>A realistic developer burnout system and random events that can pull the studio under in less than a minute.</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="wrapper devlog-card">
+        <table class="main-project-layout">
+            <tr>
+                <td class="project-image-column">
+                    <img src="Images/SU4htv.jpg" alt="Color Dash">
+                </td>
+                <td class="project-details-column">
+                    <h2>Color Dash! — Physics Puzzle</h2>
+                    <p class="project-intro">A ball-rolling physics game where using different paint types allows the user to alter physical properties directly on the stage.</p>
+                    <table class="project-table">
+                        <tr>
+                            <td class="table-label">Challenge:</td>
+                            <td>The hardest part was making the controls and the drawing process intuitive and clear for the player, so that guiding the ball into the hole was actually achievable. The mathematics behind calculating star ratings was also tough to get right.</td>
+                        </tr>
+                        <tr>
+                            <td class="table-label">Solution:</td>
+                            <td>Rewrote screen touch detection for more accurate line drawing, and tied the star system directly to the remaining level time and the amount of paint consumed.</td>
+                        </tr>
+                        <tr>
+                            <td class="table-label">Feature:</td>
+                            <td>Unique material properties: magnetic, icy, and bouncy paints that completely transform object behavior on the fly.</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="wrapper devlog-card">
+        <table class="main-project-layout">
+            <tr>
+                <td class="project-image-column">
+                    <img src="Images/nA4wlh.jpg" alt="Bombordilo Attack">
+                </td>
+                <td class="project-details-column">
+                    <h2>Bombordilo Attack! — Meme 3D Runner</h2>
+                    <p class="project-intro">A fast-paced, chaotic 3D runner featuring popular Italian meme animals, created purely for good vibes and entertainment.</p>
+                    <table class="project-table">
+                        <tr>
+                            <td class="table-label">Challenge:</td>
+                            <td>The biggest nightmare in this project was setting up the advertisements. Because I was doing it for the first time, I initially followed some sketchy and outdated guides online that did not work at all.</td>
+                        </tr>
+                        <tr>
+                            <td class="table-label">Solution:</td>
+                            <td>Completely removed the old scripts, closed the broken tutorials, studied the official SDK implementation, and successfully integrated the banner ads.</td>
+                        </tr>
+                        <tr>
+                            <td class="table-label">Feature:</td>
+                            <td>This game was made completely for fun! Absurd humor, insane pacing, and unique sound effects from viral memes.</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+</main>
+
+
+<footer>
+    <div class="phone">+38(095)553 69 60</div>
+    <div class="footerText">made by DarkVstudios</div>
+    <div class="gmail">darkvstudios@gmail.com</div>
+</footer>
+<aside></aside>
+</body>
+</html>
